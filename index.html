@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A ToDo list Application</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- adding the fontawesome icons -->
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>a todo list</h1>
+        <form id="form">
+            <input type="text" id="todo-text-input" placeholder="todo task here">
+
+            <button id="todo-add-button">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </form>
+        
+        <div id="todo-list">
+        </div>
+
+        <template class="todo-template">
+            <div class="todo-task">
+                <p class="todo-text unchecked">new task</p>
+                <span><i class="fa-solid fa-check"></i></span>
+                <span><i class="fa-solid fa-trash"></i></span>
+            </div>
+        </template>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
